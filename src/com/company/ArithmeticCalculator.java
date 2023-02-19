@@ -144,7 +144,7 @@ public class ArithmeticCalculator {
         public void setResult(String result, int from, int to) {
             //If we have brackets on the left and right by result we must remove these brackets
             //TODO or we can have more than one brackets. We must remove all of them
-            if (from-1>0 && to+1<operation.length() && operation.charAt(from-1)=='(' && operation.charAt(to+1)==')') {
+            if (from-1>=0 && to+1<operation.length() && operation.charAt(from-1)=='(' && operation.charAt(to+1)==')') {
                 from--;
                 to++;
             }
